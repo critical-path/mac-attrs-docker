@@ -4,11 +4,10 @@ FROM python
 # Set the working directory.
 WORKDIR /app
 
-# Install/update Linux packages.
+# Update Linux packages.
 RUN apt-get --yes update
-RUN apt-get --yes install git-core
 
-# Upgrade pip.
+# Update pip.
 RUN pip install --upgrade pip
 
 # Clone mac-attrs from GitHub into the working directory.
