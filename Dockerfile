@@ -2,7 +2,7 @@
 FROM python
 
 # Set the working directory.
-WORKDIR /app
+WORKDIR /src
 
 # Update Linux packages.
 RUN apt-get --yes update
@@ -15,7 +15,7 @@ RUN pip install --upgrade pip
 RUN git clone https://github.com/critical-path/mac-attrs.git .
 
 # Install mac-attrs and run its setup script.
-RUN pip install .
+RUN pip install --editable .[test]
 RUN chmod +x ./get-started.sh
 RUN ./get-started.sh
 
