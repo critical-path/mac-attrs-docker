@@ -1,3 +1,7 @@
+.. image:: https://readthedocs.org/projects/mac-attrs-docker/badge/?version=latest
+   :target: https://mac-attrs-docker.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+
 Introduction
 ============
 
